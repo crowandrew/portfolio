@@ -32,6 +32,7 @@ router.get('/', function(req, res) {
     const sequelize = cloudinary.url("portfolio/0_rwd6KeolcXgz7zpx_vs29wz.png", {width: 100, crop: "scale"});
     const mongoose = cloudinary.url("portfolio/mongoose_coeoqa.png", {width: 100, crop: "scale"});
     const cloudlogo = cloudinary.url("portfolio/0_hgh5gf.png", {width: 100, crop: "scale"})
+    const resume = cloudinary.url("portfolio/Andrew_Crow_June_2020_C_j0suoi.pdf")
 
     
 
@@ -61,7 +62,8 @@ router.get('/', function(req, res) {
         ejsLogo: ejs,
         sequelizeLogo: sequelize,
         mongooseLogo: mongoose,
-        cloudinaryLogo: cloudlogo
+        cloudinaryLogo: cloudlogo,
+        resume: resume
     });
 });
 
