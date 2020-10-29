@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/crowandrew/portfolio#readme",
   "dependencies": {
+    "cloudinary": "^1.23.0",
+    "dotenv": "^8.2.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1"
   }

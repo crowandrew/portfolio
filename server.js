@@ -12,9 +12,23 @@ app.use(express.json());
 // static directory
 app.use(express.static(__dirname + "/public"));
 
+// setup dotenv
+require("dotenv").config();
+
 //Setup router
 const routes = require("./controllers/portfolio_controller.js");
 app.use(routes);
+
+// adding cloudinary
+const cloudinary = require('cloudinary').v2
+
+// setting up cloudinary
+cloudinary.config({ 
+    cloud_name: process.env.CLOUD_NAME, 
+    api_key: process.env.CLOUD_API_KEY, 
+    api_secret: process.env.CLOUD_API_SECRET
+  });
+
 
 // setup port to listen on
 const PORT = process.env.PORT || 8080;

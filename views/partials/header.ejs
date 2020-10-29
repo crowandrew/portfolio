@@ -1,48 +1,35 @@
-<div class="uk-position-relative">
-    
-    <div class="uk-position-top">
-        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-            <div class="uk-navbar-left">
-                <ul class="uk-navbar-nav">
-                    <li class="uk-active"><a href="#">Active</a></li>
-                    <li><a href="#">Item</a></li>
-                    <li>
-                        <a href="#">Parent</a>
-                        <div class="uk-navbar-dropdown">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li class="uk-active"><a href="#"><i class="fas fa-bars fa-2x"></i></a></li>
-                                <li><a href="#">Item</a></li>
-                                <li class="uk-nav-header">Header</li>
-                                <li><a href="#">Item</a></li>
-                                <li><a href="#">Item</a></li>
-                                <li class="uk-nav-divider"></li>
-                                <li><a href="#">Item</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+    <div class="uk-navbar-left">
+        <ul class="uk-navbar-nav">
+            <li><a href="#offcanvas-usage" uk-toggle uk-tooltip="Click here to navigate the site!"><i class="fas fa-bars fa-2x"></i></a></li>
+        </ul>
     </div>
-</div>
-
-<button class="uk-button uk-button-default uk-button-small" type="button"
-                uk-toggle="target: #offcanvas-usage"></button>
-
-
-
-
+    <div class=uk-navbar-right>
+        <ul class="uk-navbar-nav">
+            <li><a href="https://github.com/crowandrew" ><i class="fab fa-2x fa-github-square"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/crow-andrew" ><i class="fab fa-2x fa-linkedin"></i></a></li>
+            <li><a href="andrew@crow.me" ><i class="fas fa-2x fa-envelope"></i></a></li>
+            <li><a href="tel:775-560-8894" ><i class="fas fa-2x fa-phone-square"></i></li>
+        </ul>
+    </div>
+</nav>
 
 <div id="offcanvas-usage" uk-offcanvas>
     <div class="uk-offcanvas-bar">
         <button class="uk-offcanvas-close" type="button" uk-close></button>
         <div class="uk-width-1-2@s uk-width-2-5@m">
             <ul class="uk-nav uk-nav-default">
-                <li class="uk-nav-header">Header</li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
+                <li class="uk-nav-header"><span class="uk-text-large">Andrew Crow</span></li>
+                <li>Full-Stack Developer</li>
                 <li class="uk-nav-divider"></li>
-                <li><a href="#">Item</a></li>
+                <li><a href="#about" uk-toggle>About  <i class="far fa-user"></i></a></li>
+                <!-- <li><a href="#experience" uk-toggle>Experience  <i class="fas fa-history"></i></a></li> -->
+                <li><a href="#projects" uk-toggle>Projects  <i class="fas fa-project-diagram"></i></a></li>
+                <li><a href="#skills" uk-toggle>Skills  <i class="fas fa-laptop-code"></i></a></li>
+                <li><a href="#">Awards  <i class="far fa-star"></i></a></li>
+                <li><a href="#">Contact  <i class="far fa-envelope"></i></i></a></li>
+                <li><a href="#">Resume  <i class="far fa-file"></i></a></li>
+                <li class="uk-nav-divider"></li>
             </ul>
         </div>
     </div>

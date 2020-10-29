@@ -1,24 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <%- include('../partials/head'); %>
 </head>
+
 <body>
 
-<header>
-    <%- include('../partials/header'); %>
-</header>
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
 
-<main>
-        <h1>This is great</h1>
-        <p>Welcome to templating using EJS</p>
-        <img data-src="https://res.cloudinary.com/crowandrew/image/upload/w_auto,c_scale/v1603932272/portfolio/Crow_Andrew_-_High_Res_2_n88ggh.jpg" class="cld-responsive">
+    <main>
+        <div class="main">
+            <div class="uk-inline"></div>
+            <div class="uk-position-small uk-position-bottom-right uk-overlay uk-overlay-default">
+                <h1 class="uk-heading-small uk-padding-remove uk-margin-remove">Andrew Crow</h1>
+                <p class="uk-text-large uk-padding-remove uk-margin-remove">Full-Stack Developer
+                <p>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+    <div id="about" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <h3>A little about me:</h3>
+            <p>I have had a passion for technology since I was a little boy and saw my first Apple
+                Macintosh, I wasn’t sure what it did, but it was love at first sight. My journey continued throughout my
+                youth of building PCs, burning bootleg CDs full of MP3s for friends, and dreaming of the future. </p>
+            <p>When I turned 16 a friend of mine had a great idea that we should start our own ISP (Internet Service
+                Provider), so we set out to start our own business. We convinced a local computer repair store to use
+                their upstairs storage area and an investor to pay for the equipment. In a few months, we launched
+                Eze-inter.net, and had a blast doing it. As you can expect at 16 I didn’t have any knowledge of
+                contracts or business ownership I was just passionate to build something with technology. The investor
+                in the end sold the business as soon as he could make a profit. This passion and drive continued through
+                multiple roles in tech from a network administrator to a computer teacher at an elementary school.</p>
+            <p>However, unforeseen financial hardship arising from an accident while moving drove me to pursue quick
+                money. I moonlighted selling car parts for a large aftermarket car parts supplier and found that I could
+                pay my medical debt faster. This drove me into the sales world where I have been for the last 15 years.
+                Each successful role after role as I moved up the leadership hierarchy didn’t fulfill this need for
+                building something with technology, so after a long discussion with my wife. Basically her telling me
+                100 times that I should just quit my job and do something else. I left my role as Director of Sales in
+                July 2020 in the middle of a pandemic.</p>
+            <p>I decided to join a Full Stack Developer Bootcamp and start building amazing things. I’m passionate about
+                coding, but also love to hike, backpack, travel, and cook, so if you are into these things too feel free
+                to reach out. I hope our paths cross at some point in a meaningful way.</p>
+        </div>
     </div>
-</main>
+    <!-- <div id="experience" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-background-secondary">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
 
-<footer>
-    <%- include('../partials/footer'); %>
-</footer>
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+                            <h3 class="uk-card-title">Default 1</h3>
+                            <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+                            <h3 class="uk-card-title">Default 2</h3>
+                            <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+                            <h3 class="uk-card-title">Default 3</h3>
+                            <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </li>
+                </ul>
+            
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            
+            </div>
+        </div>
+    </div> -->
+    <div id="projects" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="clsActivated: uk-transition-active; center: true">
 
+                <ul class="uk-slider-items uk-grid">
+                    <li class="uk-width-8-10">
+                        <div class="uk-panel">
+                            <img src=<%- whProject %> alt="">
+                            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                                <h3 class="uk-margin-remove">Whale Hunter</h3>
+                                <p class="uk-margin-remove">Whale Hunter is a beer tracking, search engine and social media app that is built to be your go to for beer discovery. Browse our app and explore new beers to taste while learning more about new beers and the breweries that made them. Save those beers to a "six pack" for referencing later. Share your experiences with your friends and strangers by posting about your experience, sharing your created six packs, and by rating beer by using our innovative Ahab scale.</p>
+                                <a href="https://whalehunterbeer.herokuapp.com/" class="uk-margin-right">Project Link</a>
+                                <a href="https://github.com/PatCeriale/Whale-Hunter" class="uk-margin-left">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-width-8-10">
+                        <div class="uk-panel">
+                            <img src=<%- msProject %> alt="">
+                            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                                <h3 class="uk-margin-remove">moodSing</h3>
+                                <p class="uk-margin-remove">moodSing is a music recommendation app that suggests music suited to the weather around the user as well as their current mood and preferred genre. These features bypass the need for users to wander and search for music that fits their mood and helps introduce the users to new music.</p>
+                                <a href="https://mrjcowman.github.io/moodSing/" class="uk-margin-right">Project Link</a>
+                                <a href="https://github.com/Mrjcowman/moodSing" class="uk-margin-left">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-width-8-10">
+                        <div class="uk-panel">
+                            <img src=<%- wdProject %> alt="">
+                            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                                <h3 class="uk-margin-remove">Weather DashBoard</h3>
+                                <p class="uk-margin-remove">This is a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS. It uses the OpenWeather API to retrieve weather data for cities and uses localStorage to store any previously searched cities. It also uses ipapi to retrieve the users city through their IP address..</p>
+                                <a href="https://github.com/crowandrew/weather_dashboard" class="uk-margin-right">Project Link</a>
+                                <a href="https://crowandrew.github.io/weather_dashboard/" class="uk-margin-left">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-width-8-10">
+                        <div class="uk-panel">
+                            <img src=<%- etProject %> alt="">
+                            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                                <h3 class="uk-margin-remove">Employee Tracker</h3>
+                                <p class="uk-margin-remove">A Node CLI that takes in information about employees and generates an HTML webpage that displays summaries for each person.</p>
+                                <a href="https://github.com/crowandrew/Template_Engine_Employee_Summary" >GitHub Repo</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            
+            </div>
+        </div>
+    </div>
+    <div id="skills" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3 class="uk-card-title">Default</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-primary uk-card-body">
+                        <h3 class="uk-card-title">Primary</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-secondary uk-card-body">
+                        <h3 class="uk-card-title">Secondary</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
