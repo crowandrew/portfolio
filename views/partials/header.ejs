@@ -1,7 +1,7 @@
 <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
     <div class="uk-navbar-left">
-        <ul class="uk-navbar-nav">
-            <li><a href="#offcanvas-usage" uk-toggle uk-tooltip="Click here to navigate the site!"><i class="fas fa-bars fa-2x"></i></a></li>
+        <ul class="uk-navbar-nav" uk-scrollspy="cls:uk-animation-shake; delay: 100">
+            <li><a id="hamburger"><i class="fas fa-bars fa-2x"></i></a></li>
         </ul>
     </div>
     <div class=uk-navbar-right>
@@ -14,7 +14,7 @@
     </div>
 </nav>
 
-<div id="offcanvas-usage" uk-offcanvas>
+<div id="offcanvas-usage"  uk-offcanvas>
     <div class="uk-offcanvas-bar">
         <button class="uk-offcanvas-close" type="button" uk-close></button>
         <div class="uk-width-1-2@s uk-width-2-5@m">

@@ -12,14 +12,12 @@
     </header>
 
     <main>
-        <div class="main">
-            <div class="uk-inline"></div>
-            <div class="uk-position-small uk-position-bottom-right uk-overlay uk-overlay-default">
+        <div>
+            <div id="titleOverlay" class="uk-position-small uk-position-bottom-right uk-overlay uk-overlay-default " uk-scrollspy="cls:  uk-animation-fade ; repeat: true">
                 <h1 class="uk-heading-small uk-padding-remove uk-margin-remove">Andrew Crow</h1>
                 <p class="uk-text-large uk-padding-remove uk-margin-remove">Full-Stack Developer
                 <p>
             </div>
-        </div>
         </div>
     </main>
 
@@ -87,26 +85,40 @@
     <div id="projects" class="uk-flex-top" uk-modal>
         <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
             <button class="uk-modal-close-default" type="button" uk-close></button>
-            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="clsActivated: uk-transition-active; center: true">
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+                uk-slider="clsActivated: uk-transition-active; center: true">
 
                 <ul class="uk-slider-items uk-grid">
                     <li class="uk-width-8-10">
                         <div class="uk-panel">
                             <img src=<%- whProject %> alt="">
-                            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                            <div
+                                class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
                                 <h3 class="uk-margin-remove">Whale Hunter</h3>
-                                <p class="uk-margin-remove">Whale Hunter is a beer tracking, search engine and social media app that is built to be your go to for beer discovery. Browse our app and explore new beers to taste while learning more about new beers and the breweries that made them. Save those beers to a "six pack" for referencing later. Share your experiences with your friends and strangers by posting about your experience, sharing your created six packs, and by rating beer by using our innovative Ahab scale.</p>
-                                <a href="https://whalehunterbeer.herokuapp.com/" class="uk-margin-right">Project Link</a>
-                                <a href="https://github.com/PatCeriale/Whale-Hunter" class="uk-margin-left">GitHub Repo</a>
+                                <p class="uk-margin-remove">Whale Hunter is a beer tracking, search engine and social
+                                    media app that is built to be your go to for beer discovery. Browse our app and
+                                    explore new beers to taste while learning more about new beers and the breweries
+                                    that made them. Save those beers to a "six pack" for referencing later. Share your
+                                    experiences with your friends and strangers by posting about your experience,
+                                    sharing your created six packs, and by rating beer by using our innovative Ahab
+                                    scale.</p>
+                                <a href="https://whalehunterbeer.herokuapp.com/" class="uk-margin-right">Project
+                                    Link</a>
+                                <a href="https://github.com/PatCeriale/Whale-Hunter" class="uk-margin-left">GitHub
+                                    Repo</a>
                             </div>
                         </div>
                     </li>
                     <li class="uk-width-8-10">
                         <div class="uk-panel">
                             <img src=<%- msProject %> alt="">
-                            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                            <div
+                                class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
                                 <h3 class="uk-margin-remove">moodSing</h3>
-                                <p class="uk-margin-remove">moodSing is a music recommendation app that suggests music suited to the weather around the user as well as their current mood and preferred genre. These features bypass the need for users to wander and search for music that fits their mood and helps introduce the users to new music.</p>
+                                <p class="uk-margin-remove">moodSing is a music recommendation app that suggests music
+                                    suited to the weather around the user as well as their current mood and preferred
+                                    genre. These features bypass the need for users to wander and search for music that
+                                    fits their mood and helps introduce the users to new music.</p>
                                 <a href="https://mrjcowman.github.io/moodSing/" class="uk-margin-right">Project Link</a>
                                 <a href="https://github.com/Mrjcowman/moodSing" class="uk-margin-left">GitHub Repo</a>
                             </div>
@@ -115,29 +127,39 @@
                     <li class="uk-width-8-10">
                         <div class="uk-panel">
                             <img src=<%- wdProject %> alt="">
-                            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                            <div
+                                class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
                                 <h3 class="uk-margin-remove">Weather DashBoard</h3>
-                                <p class="uk-margin-remove">This is a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS. It uses the OpenWeather API to retrieve weather data for cities and uses localStorage to store any previously searched cities. It also uses ipapi to retrieve the users city through their IP address..</p>
-                                <a href="https://github.com/crowandrew/weather_dashboard" class="uk-margin-right">Project Link</a>
-                                <a href="https://crowandrew.github.io/weather_dashboard/" class="uk-margin-left">GitHub Repo</a>
+                                <p class="uk-margin-remove">This is a weather dashboard that will run in the browser and
+                                    feature dynamically updated HTML and CSS. It uses the OpenWeather API to retrieve
+                                    weather data for cities and uses localStorage to store any previously searched
+                                    cities. It also uses ipapi to retrieve the users city through their IP address..</p>
+                                <a href="https://github.com/crowandrew/weather_dashboard"
+                                    class="uk-margin-right">Project Link</a>
+                                <a href="https://crowandrew.github.io/weather_dashboard/" class="uk-margin-left">GitHub
+                                    Repo</a>
                             </div>
                         </div>
                     </li>
                     <li class="uk-width-8-10">
                         <div class="uk-panel">
                             <img src=<%- etProject %> alt="">
-                            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                            <div
+                                class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
                                 <h3 class="uk-margin-remove">Employee Tracker</h3>
-                                <p class="uk-margin-remove">A Node CLI that takes in information about employees and generates an HTML webpage that displays summaries for each person.</p>
-                                <a href="https://github.com/crowandrew/Template_Engine_Employee_Summary" >GitHub Repo</a>
+                                <p class="uk-margin-remove">A Node CLI that takes in information about employees and
+                                    generates an HTML webpage that displays summaries for each person.</p>
+                                <a href="https://github.com/crowandrew/Template_Engine_Employee_Summary">GitHub Repo</a>
                             </div>
                         </div>
                     </li>
                 </ul>
-            
-                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-            
+
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                    uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                    uk-slider-item="next"></a>
+
             </div>
         </div>
     </div>
@@ -258,70 +280,75 @@
             <button class="uk-modal-close-default" type="button" uk-close></button>
             <div uk-grid>
                 <div class="uk-container uk-width-auto">
-                <form>
-                    <div class="uk-margin">
-                        <label class="uk-form-label" for="inputName">Name</label>
-                        <div class="uk-form-controls">
-                            <input  class="uk-input uk-form-width-medium uk-form-small" type="text" id="inputName" placeholder="Name">
+                    <form>
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="inputName">Name</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input uk-form-width-medium uk-form-small" type="text" id="inputName"
+                                    placeholder="Name">
+                            </div>
                         </div>
-                    </div>
-                    <div class="uk-margin">
-                        <label class="uk-form-label" for="inputEmail">Email</label>
-                        <div class="uk-form-controls">
-                            <input  class="uk-input uk-form-width-medium uk-form-small" type="text" id="inputEmail" placeholder="Email">
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="inputEmail">Email</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input uk-form-width-medium uk-form-small" type="text" id="inputEmail"
+                                    placeholder="Email">
+                            </div>
                         </div>
-                    </div>
-                    <div class="uk-margin">
-                        <label class="uk-form-label" for="inputSubject">Subject</label>
-                        <div class="uk-form-controls">
-                            <input  class="uk-input uk-form-width-medium uk-form-small" type="text" id="inputSubject" placeholder="Subject">
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="inputSubject">Subject</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input uk-form-width-medium uk-form-small" type="text" id="inputSubject"
+                                    placeholder="Subject">
+                            </div>
                         </div>
-                    </div>
-                    <div class="uk-margin">
-                        <label class="uk-form-label" for="inputMessage">Message</label>
-                        <div class="uk-form-controls">
-                        <textarea class="uk-textarea uk-form-width-large uk-form-small" id="inputMessage" rows="5" placeholder="Message"></textarea>
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="inputMessage">Message</label>
+                            <div class="uk-form-controls">
+                                <textarea class="uk-textarea uk-form-width-large uk-form-small" id="inputMessage"
+                                    rows="5" placeholder="Message"></textarea>
+                            </div>
+
                         </div>
-                        
-                    </div>
-                    <button class="uk-button uk-button-default">Send</button>
-                </form>
+                        <button class="uk-button uk-button-default">Send</button>
+                    </form>
                 </div>
                 <div class="uk-container uk-width-expand" uk-grid>
-                    
-                        <a class="uk-width-1-6" href="https://www.google.com/maps/place/Modesto,+CA+95355" target="_blank">
-                            <i class="fas fa-map-marker-alt fa-2x"></i>
-                        </a>
-                    
-                    
-                        <a class="uk-width-1-6" href="https://www.linkedin.com/in/crow-andrew/" target="_blank">
-                            <i class="fab fa-linkedin fa-2x"></i>
-                        </a>
-                    
-                    
-                        <a class="uk-width-1-6" href="https://github.com/crowandrew" target="_blank">
-                            <i class="fab fa-github fa-2x"></i>
-                        </a>
-                    
-                    
-                        <a class="uk-width-1-6" href="https://twitter.com/CrowCodes" target="_blank">
-                            <i class="fab fa-twitter-square fa-2x"></i>
-                        </a>
-                    
-                    
-                        <a class="uk-width-1-6" href="https://andrewcrow.com" target="_blank">
-                            <i class="fas fa-external-link-square-alt fa-2x"></i>
-                        </a>
-                    
-                    
-                        <a class="uk-width-1-6" href="mailto:andrew@crow.me" target="_blank">
-                            <i class="fas fa-envelope-open-text fa-2x"></i>
-                        </a>
-                    
-                
+
+                    <a class="uk-width-1-6" href="https://www.google.com/maps/place/Modesto,+CA+95355" target="_blank">
+                        <i class="fas fa-map-marker-alt fa-2x"></i>
+                    </a>
+
+
+                    <a class="uk-width-1-6" href="https://www.linkedin.com/in/crow-andrew/" target="_blank">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+
+
+                    <a class="uk-width-1-6" href="https://github.com/crowandrew" target="_blank">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+
+
+                    <a class="uk-width-1-6" href="https://twitter.com/CrowCodes" target="_blank">
+                        <i class="fab fa-twitter-square fa-2x"></i>
+                    </a>
+
+
+                    <a class="uk-width-1-6" href="https://andrewcrow.com" target="_blank">
+                        <i class="fas fa-external-link-square-alt fa-2x"></i>
+                    </a>
+
+
+                    <a class="uk-width-1-6" href="mailto:andrew@crow.me" target="_blank">
+                        <i class="fas fa-envelope-open-text fa-2x"></i>
+                    </a>
+
+
+                </div>
             </div>
         </div>
-    </div>
+        <script src="/js/offcanvas.js"></script>
 </body>
 
 </html>
